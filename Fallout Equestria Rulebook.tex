@@ -1,6 +1,7 @@
-\documentclass[12pt]{book}
+\documentclass[twocolumn, 12pt]{book}
 
-\usepackage{multicol}
+%Packages
+\usepackage[many]{tcolorbox}  
 \usepackage{titlesec}
 
 \newtcolorbox{Example}[0]{%
@@ -26,6 +27,7 @@
 \begin{document}
 \maketitle
 
+\onecolumn
 \begin{center}
 \textbf{\large Written by} \\ \normalsize
 Christopher ''Tiger'' Putz \\
@@ -42,20 +44,15 @@ Christopher ''Tiger'' Putz \\
 \end{center}
 
 \tableofcontents
+\twocolumn
   
 \chapter{Introduction}
-\begin{multicols*}{2}
 \input{chapter/introduction}
-\end{multicols*}
 
 \chapter{Rules}
-\begin{multicols*}{2}
 \input{chapter/rules}
-\end{multicols*}
 
 \chapter{Character Creation}
-\begin{multicols*}{2}
 \input{chapter/character_creation}
-\end{multicols*}
 
 \end{document}
